@@ -17,7 +17,7 @@ export const TransactionHistory = ({ items }) => {
           return (
             <Tr key={id}>
               <Td>
-                {type.toUpperCase().slice(0, 1) + type.slice(1, type.length)}
+                {type}
               </Td>
               <Td>{amount}</Td>
               <Td>{currency}</Td>

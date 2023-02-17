@@ -25,4 +25,5 @@ export const Td = styled.td`
   color: grey;
   text-align: center;
   font-size: 16px;
+  text-transform: capitalize;
 `;
