@@ -8,7 +8,7 @@ function randomHexColor() {
 export const Statistics = ({ title, stats }) => {
   return (
     <Section>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
 
       <StatList>
         {stats.map(({ id, label, percentage }) => {
@@ -30,7 +30,7 @@ export const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
